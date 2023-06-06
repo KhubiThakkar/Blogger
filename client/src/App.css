@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+}
+a {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+main {
+  padding: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+header a.logo {
+  font-weight: bold;
+  font-size: 25px;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+div.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 700px) {
+  div.post {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+div.post div.texts h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+div.post div.texts a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div.post p.info {
+  margin: 0;
+  color: #888;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 7px 0px;
+  display: flex;
+  gap: 10px;
+}
+
+p.post p.info span.author {
+  color: #333;
+}
+
+div.post p.summary {
+  margin: 10px 0;
+  line-height: 1.4rem;
+}
+
+form.login,
+form.register {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button {
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 0;
+}
+
+form.login h1,
+form.register h1 {
+  text-align: center;
+}
+
+div.postpage div.image {
+  max-height: 200px;
+  display: flex;
+  overflow: hidden;
+}
+
+div.postpage div.image img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+
+div.postpage a {
+  color: #333;
+  text-decoration: underline;
+}
+
+div.postpage h1 {
+  text-align: center;
+  margin: 10px 0 5px;
+}
+
+div.postpage time {
+  text-align: center;
+  display: block;
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+div.postpage div.author {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+div.postpage div.content {
+  line-height: 1.6rem;
+}
+
+div.editrow {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.postpage a.editbtn {
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a svg {
+  height: 20px;
+}
+
+div.errorPage h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+div.errorPage h2 {
+  margin: 0;
+}
+
+/* css for formating the image and description on porfolio page */
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.intro img {
+  width: 300;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.intro div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: 70px;
+}
+
+p.textIntro {
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .intro img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+}
+
+/* css for the footer element */
+
+footer {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  text-align: center;
+  height: 50%;
+}
+
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-info h2 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.contact-info p {
+  margin: 4px 0;
+}
+
+/* css for the experience information */
+.experience {
+  margin-bottom: 20px;
+}
+
+.experience h2 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.experience h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.experience .timeperiod {
+  font-size: 14px;
+  margin: 2px;
+}
+
+.experience .description {
+  font-size: 14px;
+}
+
+.experience .description ul {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.experience .description ul li {
+  margin-bottom: 5px;
+}
+
+.jobDesc h1 {
+  margin: 2 0;
+  text-align: center;
+}
+
+/* css for skills and projects */
+.parallelTabs {
+  display: flex;
+}
+
+.projects {
+  flex: 1;
+}
+
+.skills {
+  flex: 1;
+}
+
+.projects h1,
+.skills h1 {
+  text-align: center;
+}
+
+/* .projects .experience,
+.skills div {
+  margin-bottom: 20px;
+} */
+.skills,
+.projects {
+  margin: 0 10px;
+}
+
+
+.skills div h2 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.skills div p {
+  margin: 0;
+  font-size: 14px;
+}
