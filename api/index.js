@@ -16,7 +16,7 @@ const app = express();
 const salt = bcrypt.genSaltSync(10);
 const secret = process.env.JWT_SECRET;
 
-app.use(cors({ credentials: true, origin: 'https://khubithakkar.netlify.app' }));
+app.use(cors({ credentials: true, origin: 'https://blogger.netlify.app' }));
 // app.use(cors({ credentials: true, origin: 'http://localhost:3000' })); // dev
 
 // app.use(function (req, res, next) {
