@@ -80,7 +80,7 @@ app.post('/login', async (req, res) => {
           if (result == true) {
             // if the password entered is correct and the hashes match
             console.log('Login Successful');
-            jwt.sign({ username, id: userDoc._id }, secret, {}, (err, token) => {
+            const token = jwt.sign({ username, id: userDoc._id }, secret, {}, (err) => {
               if (err) {
                 throw new Error(err.message);
               } else {
