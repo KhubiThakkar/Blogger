@@ -1,2 +1,2 @@
 # Blogger
-Website created for blogging
+Website created for blogging using JavaScript
