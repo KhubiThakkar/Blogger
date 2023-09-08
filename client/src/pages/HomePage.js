@@ -22,6 +22,17 @@ export default function HomePage() {
         }
       })
       .catch((err) => alert(err));
+    fetch('https://www.nseindia.com/api/search/autocomplete?q=AXIS%20MF%20-%20AXIS%20GOLD%20ETF', {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json'
+      }
+    })
+      .then((response) => {
+        console.log(response)
+      })
   }, []);
+
+  
   return <div>{post.length > 0 && post.map((post) => <Post {...post} />)}</div>;
 }
